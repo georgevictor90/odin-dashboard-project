@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard</title>
+  <title>Test Dashboard</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,213 +12,66 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="main-container">
-    <div class="header">
-      <div class="search">
-        <label for="search"><i class="las la-search icon-flipped"></i></label>
-        <input type="text" name="search" id="search" placeholder="Search...">
-      </div>
+  <div class="sidebar">
+    <h1 class="logo"><img src="/images/view-grid.png" alt="Logo" class="logo-img">Dashboard</h1>
+    <input type="checkbox" name="checkbox" id="nav-toggle" class="nav-toggle">
+    <nav>
+      <ul>
+        <li><a href="#"><i class="las la-home"></i>Home</a></li>
+        <li><a href="#"><i class="las la-user"></i>Profile</a></li>
+        <li><a href="#"><i class="las la-envelope"></i>Messages</a></li>
+        <li><a href="#"><i class="las la-history"></i>History</a></li>
+        <li><a href="#"><i class="las la-tasks"></i>Tasks</a></li>
+        <li><a href="#"><i class="las la-users"></i>Communities</a></li>
+      </ul>
+      <ul>
+        <li><a href="#"><i class="las la-cog"></i>Settings</a></li>
+        <li><a href="#"><i class="las la-question-circle"></i>Support</a></li>
+        <li><a href="#"><i class="las la-user-shield"></i>Privacy</a></li>
+      </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+    </label>
+  </div>
 
-      <div class="user-notifications">
-        <a href="#">
-          <i class="las la-bell"></i>
-        </a>
-        <a href="#">
-          <img class="avatar" src="/images/cyborg-man-face-id.png" alt="Man face avatar">
-        </a>
-        <h2>Morgan Oakley</h2>
-      </div>
+  
+  <div class="header">
+    <div class="search">
+      <label for="search"><i class="las la-search icon-flipped"></i></label>
+      <input type="text" name="search" id="search" placeholder="Search...">
+    </div>
 
-      <div class="hello-user">
-        <a href="#">
-          <img class="avatar avatar-large" src="/images/cyborg-man-face-id.png" alt="Man face avatar">
-        </a>
-        <div class="greet-user">
-          <span>Hi there,</span>
-          <h1>Morgan Oakley (@morgan)</h1>
-        </div>
-      </div>
+    <div class="user-notifications">
+      <a href="#" class="bell-icon">
+        <i class="las la-bell"></i>
+      </a>
+      <a href="#" class="notification-link-img">
+        <img class="avatar" src="/images/cyborg-man-face-id.png" alt="Man face avatar">
+      </a>
+      <h2>Morgan Oakley</h2>
+    </div>
 
-      <div class="user-buttons">
-        <button>New</button>
-        <button>Upload</button>
-        <button>Share</button>
+    <div class="hello-user">
+      <a href="#">
+        <img class="avatar avatar-large" src="/images/cyborg-man-face-id.png" alt="Man face avatar">
+      </a>
+      <div class="greet-user">
+        <span>Hi there,</span>
+        <h1>Morgan Oakley (@morgan)</h1>
       </div>
     </div>
 
-    <div class="sidebar">
-      <div class="logo">
-        <img src="/images/view-grid.png" alt="Logo" class="logo-img">
-        <div class="logo-text">Dashboard</div>
-      </div>
-
-      <nav class="navigation">
-        <ul class="nav-account">
-          <li>
-            <i class="las la-home"></i>
-            <div>Home</div>
-          </li>
-          <li>
-            <i class="las la-user"></i>
-            <div>Profile</div>
-          </li>
-          <li>
-            <i class="las la-envelope"></i>
-            <div>Messages</div>
-          </li>
-          <li>
-            <i class="las la-history"></i>
-            <div>History</div>
-          </li>
-          <li>
-            <i class="las la-tasks"></i>
-            <div>Tasks</div>
-          </li>
-          <li>
-            <i class="las la-users"></i>
-            <div>Communities</div>
-          </li>
-        </ul>
-
-        <ul class="nav-settings">
-          <li><i class="las la-cog"></i>Settings</li>
-          <li><i class="las la-question-circle"></i>Support</li>
-          <li><i class="las la-user-shield"></i>Privacy</li>
-        </ul>
-        </nav>
-
+    <div class="user-buttons">
+      <button>New</button>
+      <button>Upload</button>
+      <button>Share</button>
     </div>
-
-    <div class="content">
-      <div class="content--left">
-
-        <h2>Your Projects</h2>
-
-        <div class="cards-container">
-          <div class="card left-border">
-            <div class="card-text">
-              <h3>Super Cool Project</h3>
-              <div class="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, ipsum accusamus eaque alias cumque excepturi!</div>
-            </div>
-            <div class="card-icons">
-              <i class="lab la-gratipay"></i>
-              <i class="las la-eye"></i>
-              <i class="las la-share-alt-square"></i>
-            </div>
-          </div>
-
-          <div class="card left-border">
-            <div class="card-text">
-              <h3>Less Cool Project</h3>
-              <div class="card-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ipsam exercitationem debitis, numquam commodi hic repudiandae illo autem saepe incidunt molestias doloribus, nobis, officia magni. Corporis?</div>
-            </div>
-            <div class="card-icons">
-              <i class="lab la-gratipay"></i>
-              <i class="las la-eye"></i>
-              <i class="las la-share-alt-square"></i>
-            </div>
-          </div>
-          
-          <div class="card left-border">
-            <div class="card-text">
-              <h3>Impossible App</h3>
-              <div class="card-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime minus itaque corporis dignissimos minima.</div>
-            </div>
-            <div class="card-icons">
-              <i class="lab la-gratipay"></i>
-              <i class="las la-eye"></i>
-              <i class="las la-share-alt-square"></i>
-            </div>
-          </div>
-
-          <div class="card left-border">
-            <div class="card-text">
-              <h3>Easy Peasy App</h3>
-              <div class="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ducimus repudiandae, reprehenderit vel sunt iste deleniti corporis autem incidunt expedita, architecto ipsam possimus.</div>
-            </div>
-            <div class="card-icons">
-              <i class="lab la-gratipay"></i>
-              <i class="las la-eye"></i>
-              <i class="las la-share-alt-square"></i>
-            </div>
-          </div>
-
-          <div class="card left-border">
-            <div class="card-text">
-              <h3>Ad Blocker</h3>
-              <div class="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quod. Nemo ducimus corrupti aut consectetur ipsum quis totam repellat?</div>
-            </div>
-            <div class="card-icons">
-              <i class="lab la-gratipay"></i>
-              <i class="las la-eye"></i>
-              <i class="las la-share-alt-square"></i>
-            </div>
-          </div>
-
-          <div class="card left-border">
-            <div class="card-text">
-              <h3>Money Maker</h3>
-              <div class="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, voluptatum optio blanditiis voluptates perferendis animi eligendi amet consequatur quasi dolorem excepturi?</div>
-            </div>
-            <div class="card-icons">
-              <i class="lab la-gratipay"></i>
-              <i class="las la-eye"></i>
-              <i class="las la-share-alt-square"></i>
-            </div>
-          </div>
-        </div>
-      </div>
+  </div>
 
 
-      <div class="content--right">
-        <h2>Announcements</h2>
-        <div class="announcements-container left-border">
-          <div class="announcement">
-            <h3>Site Maintenance</h3>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam soluta tempora alias ipsum.</div>
-          </div>
-          <div class="announcement">
-            <h3>Communitys Share Day</h3>
-            <div>Porro, ipsa? Quae facilis neque qui impedit. Iure dignissimos alias iusto soluta voluptatem.</div>
-          </div>
-          <div class="announcement">
-            <h3>Updated Privacy Policy</h3>
-            <div>Enim incidunt iusto, soluta maxime deserunt, expedita, cum labore qui placeat illo perferendis?</div>
-          </div>
-        </div>
-        <h2>Trending</h2>
-        <div class="trending-users left-border">
-          <div class="trend-user">
-            <img class="avatar" src="/images/sammy-dog-3.png" alt="Cute dog avatar">
-            <div class="trend-user--label">
-              <span class="trend-user--label--username">@teagan</span>
-              <span class="trend-user--label--description">World Peace Builder</span>
-            </div>
-          </div>
-          <div class="trend-user">
-            <img class="avatar" src="/images/cyborg-man-face-id.png" alt="Man face avatar">
-            <div class="trend-user--label">
-              <span class="trend-user--label--username">@morgan</span>
-              <span class="trend-user--label--description">Super Cool Project</span>
-            </div>
-          </div>
-          <div class="trend-user">
-            <img class="avatar" src="images/casual-life-3d-avatar-with-woman-in-black-hat-and-pink-shirt.png" alt="Woman avatar">
-            <div class="trend-user--label">
-              <span class="trend-user--label--username">@kendall</span>
-              <span class="trend-user--label--description">Life Changing App</span>
-            </div>
-          </div>
-          <div class="trend-user">
-            <img class="avatar" src="/images/urban-line-447.png" alt="Cute elephant avatar">
-            <div class="trend-user--label">
-              <span class="trend-user--label--username">@alex</span>
-              <span class="trend-user--label--description">No Traffic Maker</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="main-content">
+
   </div>
 </body>
 </html>
