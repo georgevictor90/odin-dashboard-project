@@ -167,8 +167,8 @@ nav i {
 .search input {
   width: 100%;
   height: 100%;
-  font-size: 1rem;
-  padding: .5rem .5rem .5rem 2.5rem;
+  font-size: .8rem;
+  padding: .3rem .3rem .3rem 2.5rem;
 }
 
 .header img {
@@ -237,6 +237,99 @@ nav i {
   cursor: pointer;
   width: calc(100% / 3);
   border: 1px solid var(--white);
+}
+
+/* ///////////////////////
+/////////MAIN CONTENT//////////
+//////////////////////// */
+.main-content img {
+  height: 50px;
+  width: 50px;
+}
+
+.main-content h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+
+.main-content h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.main-content p {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.main-content {
+  position: absolute;
+  background-color: var(--white);
+  top: 16rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* gap: 1rem; */
+}
+
+.card {
+  background-color: var(--white);
+  border-left: 4px solid orange;
+  border-block: 2px solid var(--gray);
+  border-right: 2px solid var(--gray);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card-icons {
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+  width: fit-content;
+}
+
+.card-icons i {
+  font-size: 1.5rem;
+}
+
+.announcements-card {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  background-color: var(--white);
+  padding-inline: 1rem;
+  border-left: 4px solid var(--blue);
+  margin-bottom: 1rem;
+  /* border-block: 2px solid var(--gray);
+  border-right: 2px solid var(--gray); */
+}
+
+.announcement {
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+  border-bottom: 2px solid gray;
+  padding-bottom: 1rem;
+}
+
+.announcement:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.trending {
+  background-color: var(--white);
+  padding-inline: 1rem;
+}
+
+.trending-user {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
 }
 
 /* ///////////////////////
@@ -421,7 +514,6 @@ nav i {
   }
 
   .hello-user h1 {
-    background-color: pink;
     font-size: 1.5rem;
   }
 
